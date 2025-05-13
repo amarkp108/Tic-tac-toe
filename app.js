@@ -24,7 +24,7 @@ const winpattern = [
 buttons.forEach((button) => {
   // for filling 0 and X in box
   button.addEventListener("click", () => {
-    btncount++;
+    btncount+=1;
     if (win) {
       button.innerText = "0";
       win = false;
@@ -87,6 +87,7 @@ const failsound = () => {
   if (fail == true && btncount == 9) {
     failsoundeffect.currentTime = 0;
     failsoundeffect.play();
+    console.log(btncount)
     winnermsg.innerText = "Restart the Game";
     msg.classList.remove("hide");
   }
