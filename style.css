@@ -37,3 +37,34 @@ body{
 .hide{
     display: none;
 }
+.reset{
+    width: 4rem;
+    margin: 10px auto;
+    cursor: pointer;
+   
+}
+.reset button{
+    cursor: pointer;
+     background-color: red;
+     color: white;
+     border-radius:4px ;
+}
+.reset button:hover{
+    cursor: pointer;
+     background-color:rgb(226, 17, 17);
+     color: white;
+}
+
+
+@media (max-width: 600px){
+    .container{
+
+    width: 40vh;
+    height: 40vh;
+    
+
+}
+.reset{
+    margin-top: 20px;
+}
+}
